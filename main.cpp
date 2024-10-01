@@ -14,7 +14,7 @@
 enter the two integers and operators : 9 8 -
 1
 enter the two integers and operators : 9 7 (
-unknown operator
+
 ...
 이런 식으로 반복이 됩니다.
 
@@ -41,23 +41,25 @@ if(c=='+')
     a.setValue(x,y);
     std::cout<<a.calculate()<<std::endl;
 }
-if(c=='*'){
-    m.setValue(x,y);
-    std::cout<<m.calculate()<<std::endl;
+if(c=='*')
+{
+m.setValue(x,y);
+std::cout<<m.calculate()<<std::endl;
 }
 if(c=='/')
 {
-    d.setValue(x,y);
-    std::cout<<d.calculate()<<std::endl;
+d.setValue(x,y);
+std::cout<<d.calculate()<<std::endl;
 
 }
 if(c=='-')
 {
-    s.setValue(x,y);
-    std::cout<<s.calculate()<<std::endl;
+s.setValue(x,y);
+std::cout<<s.calculate()<<std::endl;
 }else{
-    std::cout<<"unknown operator"<<std::endl;
-    continue;
+    //std::cout<<"unknown operator"<<std::endl;
+    
+  continue;
 }
 }
 }
