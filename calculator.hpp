@@ -2,6 +2,7 @@
 #define __CALCULATOR_HPP__
 
 #include<iostream>
+
 /*
 이 파일은 calculator.hpp 파일입니다.
 이 파일에는 정수 연산(Add, Sub, Div, Mul)클래스와
@@ -23,43 +24,34 @@ a.setValue(int x, int y)라든지 a.calculate() 함수가 어떻게 실행될 �
 예를 들어 Add a;로 선언할 때에 a는 Add 클래스의 멤버들을 부를 수 있는 매개변수입니다.
 따라서 멤버들을 부를 수 있는 매개변수가 통로가 되어 Add 클래스의 요소들을 부를 수 
 있는 것입니다.
-
-
-
-
-
 */
+
 class Add{ //클래스 Add 선언
 public:
 int a, b; //정수 타입 a, b 변수 선언(초기화되지 않은)
 void setValue(int x, int y);
 int calculate();
-
 };
+
 class Sub{ //클래스 Sub 선언
 public:
 int a, b;
 void setValue(int x, int y);
 int calculate();
-
 };
 
-class Mul{
+class Mul{ //클래스 Mul 선언
 public:
 int a, b;
 void setValue(int x, int y);
 int calculate();
-
 };
 
-
-class Div{
+class Div{ //클래스 Div 선언
 public:
 int a, b;
 void setValue(int x, int y);
 int calculate();
-
 };
-
 
 #endif 
