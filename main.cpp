@@ -1,4 +1,5 @@
 #include "calculator.cpp"
+
 /*이 파일은 main.cpp입니다. 
 이 파일에서는 Add 클래스와 Sub 클래스 , Mul 클래스, Div 클래스를 호출하고 있습니다.
 그리고 while(true) 구문을 통하여 main 함수 내의 기능들을 반복하고 있습니다.
@@ -17,11 +18,8 @@ enter the two integers and operators : 9 7 (
 
 ...
 이런 식으로 반복이 됩니다.
-
-
-
-
 */
+
 int main(int argc, char *argv[]){
 Add a;
 Sub s;
@@ -35,31 +33,33 @@ std::cout<<"enter the two integers and operators : ";
 
 std::cin>>x>>y>>c;
 
-
 if(c=='+')
 {
     a.setValue(x,y);
     std::cout<<a.calculate()<<std::endl;
 }
+    
 if(c=='*')
 {
-m.setValue(x,y);
-std::cout<<m.calculate()<<std::endl;
+    m.setValue(x,y);
+    std::cout<<m.calculate()<<std::endl;
 }
+    
 if(c=='/')
 {
-d.setValue(x,y);
-std::cout<<d.calculate()<<std::endl;
-
+    d.setValue(x,y);
+    std::cout<<d.calculate()<<std::endl;
 }
+
 if(c=='-')
 {
-s.setValue(x,y);
-std::cout<<s.calculate()<<std::endl;
-}else{
-    //std::cout<<"unknown operator"<<std::endl;
+    s.setValue(x,y);
+    std::cout<<s.calculate()<<std::endl;
+}
     
-  continue;
+else{
+    //std::cout<<"unknown operator"<<std::endl;
+    continue;
 }
 }
 }
