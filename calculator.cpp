@@ -28,7 +28,7 @@ b=y;
 }
 int Mul::calculate(){
 
-    return a+b;
+    return a*b;
 }
 void Div::setValue(int x, int y){
 a=x;
@@ -38,5 +38,5 @@ b=y;
 }
 int Div::calculate(){
 
-    return a+b;
+    return a/b;
 }
