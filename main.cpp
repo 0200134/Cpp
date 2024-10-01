@@ -36,29 +36,28 @@ std::cout<<"enter the two integers and operators : ";
 std::cin>>x>>y>>c;
 
 
-if(c=='+'){
+if(c=='+')
+{
     a.setValue(x,y);
     std::cout<<a.calculate()<<std::endl;
 }
 if(c=='*'){
-m.setValue(x,y);
-std::cout<<m.calculate()<<std::endl;
+    m.setValue(x,y);
+    std::cout<<m.calculate()<<std::endl;
 }
 if(c=='/')
 {
-d.setValue(x,y);
-std::cout<<d.calculate()<<std::endl;
+    d.setValue(x,y);
+    std::cout<<d.calculate()<<std::endl;
 
 }
 if(c=='-')
 {
     s.setValue(x,y);
-   std::cout<<s.calculate()<<std::endl;
-}
-else{
+    std::cout<<s.calculate()<<std::endl;
+}else{
     std::cout<<"unknown operator"<<std::endl;
     continue;
-    
 }
 }
 }
