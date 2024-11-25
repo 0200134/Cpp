@@ -5,6 +5,5 @@
 #include<vector>
 
 void Line::draw(){
-
     std::cout<<"Line"<<std::endl;
 }
