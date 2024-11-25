@@ -3,5 +3,4 @@
 
 void Shape::paint(){
 draw();
-
 }
