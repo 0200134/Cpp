@@ -2,8 +2,8 @@
 #define __GRAPHICEDITOR_HPP__
 #include"Shape.hpp"
 #include<vector>
-
 #include <iostream>
+
 #include"Circle.hpp"
 #include"Line.hpp"
 #include"Rect.hpp"
@@ -21,8 +21,7 @@ class GraphicEditor {
 public:
     ~GraphicEditor() {
         for (Shape* shape : shapes) {
-            delete shape;
-        }
+            delete shape;}
     }
 
     void insertShape(int type) {
@@ -39,8 +38,7 @@ public:
                 break;
             default:
                 cout << "Invalid type" << endl;
-                return;
-        }
+                return;}
         shapes.push_back(shape);
         cout << "Shape inserted." << endl;
     }
@@ -48,8 +46,7 @@ public:
     void deleteShape(int index) {
         if (index < 0 || index >= shapes.size()) {
             cout << "Invalid index" << endl;
-            return;
-        }
+            return;}
         delete shapes[index];
         shapes.erase(shapes.begin() + index);
         cout << "Shape deleted." << endl;
@@ -58,8 +55,7 @@ public:
     void showAllShapes() {
         for (int i = 0; i < shapes.size(); i++) {
             cout << i << ": ";
-            shapes[i]->draw();
-        }
+            shapes[i]->draw();}
     }
 
     void run() {
@@ -85,9 +81,7 @@ public:
                     showAllShapes();
                     break;
                 default:
-                    cout << "Invalid choice" << endl;
-            }
-        }
+                    cout << "Invalid choice" << endl;}}
     }
 };
 
