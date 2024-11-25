@@ -10,12 +10,6 @@
 
 using namespace std;
 
-
-
-
-
-
-
 class GraphicEditor {
     vector<Shape*> shapes;
 public:
@@ -84,7 +78,5 @@ public:
                     cout << "Invalid choice" << endl;}}
     }
 };
-
-
 
 #endif 
